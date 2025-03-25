@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memes, the dna of the soul</title>
+  <style>
+    /* --------------------------- */
+    /* Skip Link Styling */
+    /* --------------------------- */
+    .skip-link {
+      position: absolute;
+      left: -1000px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      background: #222;
+      color: #fff;
+      padding: 10px;
+      text-decoration: none;
+      transition: left 0.3s ease;
+    }
+    .skip-link:focus {
+      left: 10px;
+      top: 10px;
+      z-index: 1000;
+    }
+
+    /* --------------------------- */
+    /* Base and Global Styles */
+    /* --------------------------- */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+
+    /* Style all images using the box model */
+    img {
+      border: 2px solid #ccc;
+      padding: 5px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.05);
+      border-color: #ff6600;
+    }
+
+    /* --------------------------- */
+    /* Header */
+    /* --------------------------- */
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* --------------------------- */
+    /* Navigation (using flex) */
+    /* --------------------------- */
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: #444;
+      padding: 15px;
+      color: #fff;
+      font-size: 18px;
+      transition: background 0.3s ease;
+    }
+    nav:hover {
+      background: #555;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 15px;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ff6600;
+    }
+
+    /* --------------------------- */
+    /* Main Content Area */
+    /* --------------------------- */
+    main {
+      padding: 20px;
+    }
+
+    /* Grid container for meme posts (using grid property) */
+    .meme-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin: 20px 0;
+    }
+    .meme-item {
+      background: #fff;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .meme-item img {
+      width: 100%;
+      display: block;
+    }
+    .meme-item h2 {
+      margin: 10px 0;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    /* --------------------------- */
+    /* Flex container for featured memes/videos */
+    /* --------------------------- */
+    .featured-flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 20px;
+      margin: 20px 0;
+    }
+    .featured-flex div {
+      background: #fff;
+      padding: 10px;
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    /* Using nth-child to give every other featured image a different border-radius */
+    .featured-flex img:nth-child(odd) {
+      border-radius: 50%;
+    }
+    .featured-flex img:nth-child(even) {
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Skip to Main Content Link -->
+  <a href="#main" class="skip-link">Skip to Main Content</a>
+
+  <!-- Header -->
+  <header>
+    <h1>Top text</h1>
+    <p>HIIIIIIIIIIIIIIIIII!!! welcome to memes.</p>
+  </header>
+
+  <!-- Navigation (using flex) -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Memes</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main">
+    <section class="meme-grid">
+      <article class="meme-item">
+        <video><source src="path-to-your-video.mp4" type="video/mp4"></video>
+        <h2>Meme Title 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <article class="meme-item">
+        <img src="https://via.placeholder.com/300x200?text=Meme+1" alt="Meme 1">
+        <h2>Meme Title 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </article>
+      <article class="meme-item">
+        <img src="https://via.placeholder.com/300x200?text=Meme+2" alt="Meme 2">
+        <h2>Meme Title 2</h2>
+        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </article>
+      <article class="meme-item">
+        <img src="https://via.placeholder.com/300x200?text=Meme+3" alt="Meme 3">
+        <h2>Meme Title 3</h2>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </article>
+      <article class="meme-item">
+        <img src="https://via.placeholder.com/300x200?text=Meme+4" alt="Meme 4">
+        <h2>Meme Title 4</h2>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+      </article>
+    </section>
+
+    <section class="featured-flex">
+      <div>
+        <img src="https://via.placeholder.com/300x200?text=Featured+1" alt="Featured Meme 1">
+        <p>Featured Meme 1</p>
+      </div>
+      <div>
+        <img src="https://via.placeholder.com/300x200?text=Featured+2" alt="Featured Meme 2">
+        <p>Featured Meme 2</p>
+      </div>
+      <div>
+        <img src="https://via.placeholder.com/300x200?text=Featured+3" alt="Featured Meme 3">
+        <p>Featured Meme 3</p>
+      </div>
+      <div>
+        <img src="https://via.placeholder.com/300x200?text=Featured+4" alt="Featured Meme 4">
+        <p>Featured Meme 4</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
